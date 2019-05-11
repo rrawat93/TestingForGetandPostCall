@@ -1,0 +1,186 @@
+[
+  {
+    "description": " Testing the secnarios to test",
+    "keyword": "Feature",
+    "name": "",
+    "line": 1,
+    "id": "",
+    "tags": [],
+    "uri": "test\\features\\Testing.feature",
+    "elements": [
+      {
+        "id": ";making-a-get-call",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Making a get call",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I set Accept header to application/json",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:37"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I GET /posts/1",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "response code should be 200",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:167"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "response body path $.userId should be 1",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": ";making-a-post-call",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Making a post call",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I set Accept header to application/json",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:37"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I POST to /posts",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "response code should be 201",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:167"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "response body path $.id should be 1",
+            "match": {
+              "location": "apickli\\apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
