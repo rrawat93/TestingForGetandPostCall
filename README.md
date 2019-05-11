@@ -13,12 +13,12 @@ To Geerate report
 This will also read a json/Xml file, update it and save a new json/xml file.
 Steps are as below:
 1. source files are :
-json: support/app.json
-Xml: support/app.xml
+json: source/app.json
+Xml: source/app.xml
 
 2. Results file:
-Json: support/Results/Resultsapp.json
-Xml: support/Results/Resultsapp.xml
+Json: source/Results/Resultsapp.json
+Xml: source/Results/Resultsapp.xml
 
 To run the code
 3. $ npm install
