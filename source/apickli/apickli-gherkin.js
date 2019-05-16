@@ -98,6 +98,50 @@ When(/^I GET (.*)$/, function(resource, callback) {
   });
 });
 
+When(/^I do (.*) (.*)$/, function(call, resource, callback) {
+  
+  if (call=="GET"){
+    this.apickli.get(resource, function(error, response) {
+      if (error) {
+        callback(new Error(error));
+      }
+  
+      callback();
+    });
+  
+}
+ if(call=="POST"){
+  this.apickli.post(resource, function(error, response) {
+    if (error) {
+      callback(new Error(error));
+    }
+
+    callback();
+  });
+}
+}
+);
+
+ function posts (resource,callback) {
+  this.apickli.post(resource, function(error, response) {
+    if (error) {
+      callback(new Error(error));
+    }
+
+    callback();
+  });
+}
+
+function gets (resource,callback) {
+  this.apickli.get(resource, function(error, response) {
+    if (error) {
+      callback(new Error(error));
+    }
+
+    callback();
+  });
+}
+
 When(/^I POST to (.*)$/, function(resource, callback) {
   this.apickli.post(resource, function(error, response) {
     if (error) {
